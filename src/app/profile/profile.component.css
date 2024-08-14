@@ -23,6 +23,7 @@ a {
     background-color: #333;
     color: #fff;
     padding: 15px 0;
+
 }
 
 .navbar .logo {
@@ -49,7 +50,7 @@ a {
 /* Hero Section */
 .hero {
     /* background: url('hero-image.jpg') no-repeat center center/cover; */
-    background-color:#67d02e;
+    background-color:#34afbf;
     color: #fff;
     text-align: center;
     padding: 100px 0;
@@ -117,12 +118,19 @@ a {
 }
 
 .skill-item {
-    background-color: #333;
+    background-color: #2d2d2d;
     color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 18px;
+    transition: background-color 0.5s;
+
 }
+.skill-item:hover {
+    background-color: #f6af0a;
+    color: #000000;
+}
+
 
 /* Projects Section */
 .projects {
@@ -148,6 +156,7 @@ a {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
+    transition: background-color 0.5s;
 }
 
 .project-item h3 {
@@ -157,6 +166,11 @@ a {
 
 .project-item p {
     font-size: 16px;
+}
+
+.project-item:hover{
+    background-color: #f6af0a;
+    color: #000000;
 }
 
 /* Contact Section */

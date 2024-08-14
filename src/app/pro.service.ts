@@ -11,6 +11,7 @@ export class ProService {
 
   navigateTo(url: string): void {
     window.location.href = (url);
+    //new window.location.href = (url);
   }
 
 }
