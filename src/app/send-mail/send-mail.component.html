@@ -1,0 +1,33 @@
+<div class="email-container">
+    <h2>Send an Email</h2>
+    <form (ngSubmit)="sendEmail()">
+      <label for="receiverEmail">Receiver's Email:</label>
+      <input
+        type="email"
+        id="receiverEmail"
+        [(ngModel)]="email.receiver"
+        name="receiverEmail"
+        required
+      />
+  
+      <label for="subject">Subject:</label>
+      <input
+        type="text"
+        id="subject"
+        [(ngModel)]="email.subject"
+        name="subject"
+        required
+      />
+  
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        [(ngModel)]="email.message"
+        name="message"
+        required
+      ></textarea>
+  
+      <button type="submit" (click)="sendEmail()">Send Email</button>
+    </form>
+  </div>
+  
