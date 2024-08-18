@@ -10,8 +10,8 @@ def launch_instance(OSName,regionName, instanceType, imageId):
         myec2 = boto3.resource(
             service_name="ec2",
             region_name=regionName,
-            aws_access_key_id= 'AKIAVRUVRDUTQW5BV3RT',
-            aws_secret_access_key= 'sK/3WfiihuKDXzXZsFWef00VFsY5yU6GjKHMIgVB'
+            aws_access_key_id= 'Add your access key',
+            aws_secret_access_key= 'add your secret access key'
         )
 
         # Launching the EC2 instance
