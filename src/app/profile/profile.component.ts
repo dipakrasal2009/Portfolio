@@ -11,6 +11,13 @@ import { ProService } from '../pro.service';
 
 export class ProfileComponent
 {
+
+  name = " "
+  email = " "
+  message = " "
+
+
+
   constructor(private service : ProService){}
 
 
@@ -86,6 +93,15 @@ export class ProfileComponent
   onButtonClickCNodeJS(): void {
     const targetUrl = ''; // The URL you want to navigate to
     this.service.navigateTo(targetUrl);
+  }
+
+  conatct(): void{
+    if (this.name && this. email && this.message){
+      this .service.contact(this.name,this.email,this.message);
+    }
+    else{
+      console.error("All Fields are required....");
+    }
   }
 
 

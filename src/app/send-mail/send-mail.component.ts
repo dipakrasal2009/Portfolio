@@ -17,7 +17,7 @@ export class SendMailComponent {
   constructor(private service : ProService){}
 
   sendEmail() {
-    console.log("oiwdjlwejfwef");
+    //console.log("oiwdjlwejfwef");
     if (this.email.receiver && this.email.subject && this.email.message) {
     this.service.navigatetoemail(this.email.receiver,this.email.subject,this.email.message);
     }
