@@ -10,6 +10,8 @@ import { SendMailComponent } from './send-mail/send-mail.component';
 import { SendWhatsappComponent } from './send-whatsapp/send-whatsapp.component';
 import { DockeroslaunchComponent } from './dockeroslaunch/dockeroslaunch.component';
 import { LaunchEc2InstanceComponent } from './launch-ec2-instance/launch-ec2-instance.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { SendTextMessageComponent } from './send-text-message/send-text-message.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LaunchEc2InstanceComponent } from './launch-ec2-instance/launch-ec2-ins
     SendMailComponent,
     SendWhatsappComponent,
     DockeroslaunchComponent,
-    LaunchEc2InstanceComponent
+    LaunchEc2InstanceComponent,
+    CalculatorComponent,
+    SendTextMessageComponent
   ],
   imports: [
     BrowserModule,

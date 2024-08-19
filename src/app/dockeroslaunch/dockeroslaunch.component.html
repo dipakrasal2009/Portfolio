@@ -3,13 +3,17 @@
     <div class="container">
         <h1>Docker Image Launcher</h1>
         <div class="input-group">
-            <input type="text" id="imageName" placeholder="Enter Docker Image Name">
+            <input type="text" id="imageName" placeholder="Enter Docker image Name">
+        </div>
+        <div class="input-group">
+            <input type="text" id="DockerName" placeholder="Enter Docker Name">
         </div>
         <div class="buttons">
-            <button class="download" onclick="downloadImage()">Download Image</button>
-            <button class="run">Run Image</button>
-            <button class="stop">Stop Image</button>
+            <button class="download" (click)="DownloadeImage()">Download Image</button>
+            <button class="run"(click)="RunImage()">Run Image</button>
+            <button class="stop" (click)="StopImage()">Stop Image</button>
         </div>
+        
     </div>
 </body>
 

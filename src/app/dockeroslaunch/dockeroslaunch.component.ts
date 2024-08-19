@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProService } from '../pro.service';
 
 @Component({
   selector: 'app-dockeroslaunch',
@@ -6,6 +7,31 @@ import { Component } from '@angular/core';
   styleUrl: './dockeroslaunch.component.css'
 })
 export class DockeroslaunchComponent {
-  downloadImage(){}
+
+  imageName = '';
+  DockerName = '';
+
+  constructor(private service : ProService){}
+
+  DownloadeImage()
+  {
+   console.log('Image Downloaded successfully....');
+
+   if(this.imageName && this.DockerName){
+    this.service.Docker(this.imageName,this.DockerName);
+   }
+   else{
+    console.error("All Fields are required....");
+   }
+  }
+
+  RunImage(){
+
+  }
+
+  StopImage(){
+
+  }
+  
 
 }

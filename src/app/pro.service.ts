@@ -38,4 +38,14 @@ export class ProService {
     // window.location.href = url;
   }
 
+  Docker(ImageName : string,DockerName : string){
+    const url = ``;
+    window.location.href = url;
+  }
+
+  sendsms(mobilenumber:string,message:string){
+    const url = `http://127.0.0.1:5000/sendsms/${encodeURIComponent(mobilenumber)}/${encodeURIComponent(message)}`;
+    window.location.href = url;
+  }
+
 }
