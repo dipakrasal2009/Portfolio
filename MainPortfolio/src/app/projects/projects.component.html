@@ -1,0 +1,34 @@
+
+<div class="header">
+    <h1>Dipak Rasal</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/projects" class="active">Projects</a></li>
+        <li><a routerLink="/skills">Skills</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div class="portfolio">
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button (click)="filterProjects('all')">All</button>
+      <button (click)="filterProjects('aws')">AWS Services</button>
+      <button (click)="filterProjects('python')">Python</button>
+      <button (click)="filterProjects('fullstack')">Full-Stack</button>
+      <button (click)="filterProjects('linux')">Linux</button>
+      <button (click)="filterProjects('docker')">Docker Automation</button>
+      <button (click)="filterProjects('gui')">Python GUI</button>
+    </div>
+  
+    <div class="projects-container">
+      <div *ngFor="let project of filteredProjects" class="project-card">
+        <img [src]="project.image" alt="{{project.title}}" />
+        <h3>{{ project.title }}</h3>
+      </div>
+    </div>
+  </div>
+  
