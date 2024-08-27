@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -26,6 +27,8 @@ export class ProjectsComponent {
 
   filteredProjects = this.projects;
 
+  constructor(private router : Router){}
+
   ngOnInit(): void {}
 
   filterProjects(category: string): void {
@@ -33,6 +36,37 @@ export class ProjectsComponent {
       category === 'all'
         ? this.projects
         : this.projects.filter((project) => project.category === category);
+  }
+
+  onProjectClick(project: any): void {
+    console.log('Project clicked:', project.title);
+
+    if (project.title == "Scrap-5 Search"){
+        console.log("scrapped clicked.................");
+        // Example: Navigate to a project detail page
+        this.router.navigate(['/scrapgoogle']);
+    }
+
+    if (project.title == "Bulk Email"){
+      console.log("email clicked.................");
+    }
+
+    if (project.title == "Geo Coordinates"){
+      console.log("geo clicked.................");
+    }
+
+    if (project.title == "Python SMS"){
+      console.log("sms clicked.................");
+    }
+
+    if (project.title == "WhatsApp Message"){
+      console.log("whatsapp clicked.................");
+    }
+
+
+
+    // Example: Navigate to a project detail page
+    // this.router.navigate(['/project-details', project.title]);
   }
 
 }
