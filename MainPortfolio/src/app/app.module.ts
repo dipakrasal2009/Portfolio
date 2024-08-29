@@ -13,6 +13,7 @@ import { ScrapGoogleComponent } from './scrap-google/scrap-google.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.component';
+import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.co
     SkillsComponent,
     ContactComponent,
     ScrapGoogleComponent,
-    GeoCordinateComponent
+    GeoCordinateComponent,
+    BulkMailComponent
   ],
   imports: [
     BrowserModule,

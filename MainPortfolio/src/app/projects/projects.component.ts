@@ -49,6 +49,7 @@ export class ProjectsComponent {
 
     if (project.title == "Bulk Email"){
       console.log("email clicked.................");
+      this.router.navigate(['/bulk']);
     }
 
     if (project.title == "Geo Coordinates"){
