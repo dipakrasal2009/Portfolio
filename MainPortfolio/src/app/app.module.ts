@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ScrapGoogleComponent } from './scrap-google/scrap-google.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     ProjectsComponent,
     SkillsComponent,
     ContactComponent,
-    ScrapGoogleComponent
+    ScrapGoogleComponent,
+    GeoCordinateComponent
   ],
   imports: [
     BrowserModule,

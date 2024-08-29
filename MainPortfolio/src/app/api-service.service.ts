@@ -21,4 +21,8 @@ export class ApiServiceService {
     return this.http.get<any>( `http://127.0.0.1:5000/google/${query}`)
     //window.location.href = url;
   }
+
+  GetGeoCordinateData():any{
+    return this.http.get<any>(`http://127.0.0.1:5000/location`);
+  }
 }

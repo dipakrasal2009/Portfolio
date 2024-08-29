@@ -53,6 +53,7 @@ export class ProjectsComponent {
 
     if (project.title == "Geo Coordinates"){
       console.log("geo clicked.................");
+      this.router.navigate(['/geo']);
     }
 
     if (project.title == "Python SMS"){

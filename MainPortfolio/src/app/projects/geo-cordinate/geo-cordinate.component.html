@@ -1,0 +1,11 @@
+
+<div class="container">
+    <h2>find the current geo cordinate</h2>
+    <!-- <input type="text" [(ngModel)]="inputData" placeholder="Enter something..." /> -->
+    <button (click)="fetchData()">Find Location</button>
+  
+    <div *ngIf="location">
+      <h3>Your Location : </h3>
+      <pre>{{ location | json }}</pre>
+    </div>
+  </div>
