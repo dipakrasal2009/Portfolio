@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.component';
 import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
+import { WhatsappComponent } from './projects/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
     ContactComponent,
     ScrapGoogleComponent,
     GeoCordinateComponent,
-    BulkMailComponent
+    BulkMailComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,

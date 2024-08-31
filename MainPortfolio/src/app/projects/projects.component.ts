@@ -63,6 +63,7 @@ export class ProjectsComponent {
 
     if (project.title == "WhatsApp Message"){
       console.log("whatsapp clicked.................");
+      this.router.navigate(['/whatsapp'])
     }
 
 

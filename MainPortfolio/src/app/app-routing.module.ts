@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ScrapGoogleComponent } from './scrap-google/scrap-google.component';
 import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.component';
 import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
+import { WhatsappComponent } from './projects/whatsapp/whatsapp.component';
 
 const routes: Routes = [
   {path : '',component:StartingComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path : 'scrapgoogle',component:ScrapGoogleComponent},
   {path : 'geo',component:GeoCordinateComponent},
-  {path : 'bulk',component:BulkMailComponent}
+  {path : 'bulk',component:BulkMailComponent},
+  {path: 'whatsapp',component:WhatsappComponent}
 ];
 
 @NgModule({
