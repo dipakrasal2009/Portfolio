@@ -30,7 +30,7 @@ export class ApiServiceService {
     return this.http.get<any>(`http://127.0.0.1:5000/mail/${reciver}/${subject}/${message}`);
   }
 
-  sendwhatsapp(mobileNumber : string,message : string){
-
+  sendwhatsapp(mobileNumber : string,message : string):any{
+    return this.http.get<any>(`http://127.0.0.1:5000/whatsapp/${mobileNumber}/${message}`);
   }
 }
