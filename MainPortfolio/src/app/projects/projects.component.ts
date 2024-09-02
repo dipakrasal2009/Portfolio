@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LaunchEC2Component } from './launch-ec2/launch-ec2.component';
 
 @Component({
   selector: 'app-projects',
@@ -64,6 +65,11 @@ export class ProjectsComponent {
     if (project.title == "WhatsApp Message"){
       console.log("whatsapp clicked.................");
       this.router.navigate(['/whatsapp'])
+    }
+
+    if(project.title == "Launch EC2 Instance"){
+      console.log("Launch ec2 instance clicked....");
+      this.router.navigate(['/launchec2']);
     }
 
 

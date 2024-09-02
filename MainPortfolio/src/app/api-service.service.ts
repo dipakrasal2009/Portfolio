@@ -33,4 +33,13 @@ export class ApiServiceService {
   sendwhatsapp(mobileNumber : string,message : string):any{
     return this.http.get<any>(`http://127.0.0.1:5000/whatsapp/${mobileNumber}/${message}`);
   }
+
+  LaunchInstance(OSName:string,region:string,instanceType:string,imageId:string):any{
+    console.log("osname :",OSName);
+    console.log("instance type :",instanceType);
+    console.log("image id  :",imageId);
+
+    
+    return this.http.get<any>(`http://127.0.0.1:5000/LaunchInstance/${OSName}/${region}/${instanceType}/${imageId}`);
+  }
 }

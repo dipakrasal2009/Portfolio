@@ -9,6 +9,9 @@ import { ScrapGoogleComponent } from './scrap-google/scrap-google.component';
 import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.component';
 import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
 import { WhatsappComponent } from './projects/whatsapp/whatsapp.component';
+import { LaunchEC2Component } from './projects/launch-ec2/launch-ec2.component';
+
+
 
 const routes: Routes = [
   {path : '',component:StartingComponent},
@@ -19,7 +22,9 @@ const routes: Routes = [
   {path : 'scrapgoogle',component:ScrapGoogleComponent},
   {path : 'geo',component:GeoCordinateComponent},
   {path : 'bulk',component:BulkMailComponent},
-  {path: 'whatsapp',component:WhatsappComponent}
+  {path: 'whatsapp',component:WhatsappComponent},
+  {path:'launchec2',component:LaunchEC2Component}
+  
 ];
 
 @NgModule({
