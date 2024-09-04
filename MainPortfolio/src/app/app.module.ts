@@ -16,6 +16,7 @@ import { GeoCordinateComponent } from './projects/geo-cordinate/geo-cordinate.co
 import { BulkMailComponent } from './projects/bulk-mail/bulk-mail.component';
 import { WhatsappComponent } from './projects/whatsapp/whatsapp.component';
 import { LaunchEC2Component } from './projects/launch-ec2/launch-ec2.component';
+import { SendMessageComponent } from './projects/send-message/send-message.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LaunchEC2Component } from './projects/launch-ec2/launch-ec2.component';
     GeoCordinateComponent,
     BulkMailComponent,
     WhatsappComponent,
-    LaunchEC2Component
+    LaunchEC2Component,
+    SendMessageComponent
   ],
   imports: [
     BrowserModule,

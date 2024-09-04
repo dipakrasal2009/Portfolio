@@ -42,4 +42,8 @@ export class ApiServiceService {
     
     return this.http.get<any>(`http://127.0.0.1:5000/LaunchInstance/${OSName}/${region}/${instanceType}/${imageId}`);
   }
+
+  sendsms(mobilenumber:string,message:string):any{
+    return this.http.get<any>( `http://127.0.0.1:5000/mail/${mobilenumber}/${message}`);
+  }
 }

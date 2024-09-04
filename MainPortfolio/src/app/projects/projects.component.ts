@@ -60,6 +60,7 @@ export class ProjectsComponent {
 
     if (project.title == "Python SMS"){
       console.log("sms clicked.................");
+      this.router.navigate(['/sms']);
     }
 
     if (project.title == "WhatsApp Message"){
@@ -70,6 +71,11 @@ export class ProjectsComponent {
     if(project.title == "Launch EC2 Instance"){
       console.log("Launch ec2 instance clicked....");
       this.router.navigate(['/launchec2']);
+    }
+
+    if(project.title == "Launch Docker Image"){
+      console.log("Docker Image Launcher clicked.........");
+      
     }
 
 
