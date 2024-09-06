@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class ContactComponent {
   email : any = "dipakrasal2009@gmail.com";
   mobile_no : any = "+91 7219704283";
+  Name : string = 'Dipak Rasal'
 
 }
