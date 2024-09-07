@@ -1,0 +1,33 @@
+<div class="ec2-launch-container">
+    <h2>Launch EC2 Instance</h2>
+    <form (ngSubmit)="launchInstance()">
+      
+      <label for="Name">Name of OS</label>
+      <input type="text" id="OSName" [(ngModel)]="OSName" name="accessKey" required />
+  
+      <!-- <label for="count">Count of OS</label>
+      <input type="text" id="Count" [(ngModel)]="count" name="secretKey" required /> -->
+  
+      <label for="region">AWS Region</label>
+      <input type="text" id="region" [(ngModel)]="region" name="region" required />
+  
+      <label for="instanceType">Instance Type</label>
+      <input type="text" id="instanceType" [(ngModel)]="instanceType" name="instanceType" value="t2.micro" required />
+  
+      <label for="imageId">Image ID</label>
+      <input type="text" id="imageId" [(ngModel)]="imageId" name="imageId" value="ami-0a4408457f9a03be3" required />
+  
+      <button type="button" (click)="launchInstance()">Launch Instance</button>
+    </form>
+  </div>
+  
+  //AKIAVRUVRDUTQW5BV3RT
+  
+  //sK/3WfiihuKDXzXZsFWef00VFsY5yU6GjKHMIgVB
+  
+  
+  
+  //ami-0a4408457f9a03be3
+  
+  
+  

@@ -1,0 +1,61 @@
+
+<div class="header">
+    <h1>Dipak Rasal</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/skills" class="active">Skills</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="skills-container">
+    <h2 class="skills-title">Skills</h2>
+  
+    <!-- Frontend Skills -->
+    <div class="skills-section">
+      <h3 class="skills-category">Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of frontendSkills">
+          <img [src]="skill.icon" alt="{{ skill.name }}" />          
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Backend Skills -->
+    <div class="skills-section">
+      <h3 class="skills-category">Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of backendSkills">
+          <img [src]="skill.icon" alt="{{ skill.name }}" />         
+           <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Technologies -->
+    <div class="skills-section">
+      <h3 class="skills-category">Technologies</h3>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of technologySkills">
+          <img [src]="skill.icon" alt="{{ skill.name }}" />
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h3 class="skills-category">Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of Languages">
+          <img [src]="skill.icon" alt="{{ skill.name }}" />
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

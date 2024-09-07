@@ -1,0 +1,40 @@
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid #00f70c;
+    border-radius: 8px;
+    background-color: #18253b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .container h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #35ff1f;
+    margin-bottom: 20px;
+  }
+
+  .container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .container button:hover {
+    background-color: #0056b3;
+  }
+
+
+  pre{
+    color: #007bff;
+  }
+
+  h3{
+    color: #00f70c;
+  }

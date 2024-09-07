@@ -1,0 +1,31 @@
+<!-- <div>
+  <input [(ngModel)]="query" type="text" placeholder="Enter your search query">
+  <button (click)="search()">Search</button>
+</div>
+
+<div *ngIf="searchResults.length > 0">
+  <h3>Top 5 Google Search Results:</h3>
+  <ul>
+    <li *ngFor="let result of searchResults">{{ result }}</li>
+  </ul>
+</div>
+
+<div *ngIf="searchResults.length === 0 && query.trim()">
+  <p>No results found.</p>
+</div>
+ -->
+
+
+ 
+
+
+<div class="container">
+    <h2>scrap Top 5 Results on Google Search</h2>
+    <input type="text" [(ngModel)]="inputData" placeholder="Enter something..." />
+    <button (click)="fetchData()">Submit</button>
+  
+    <div *ngIf="apiResponse">
+      <h3>API Response:</h3>
+      <pre>{{ apiResponse | json }}</pre>
+    </div>
+  </div>
