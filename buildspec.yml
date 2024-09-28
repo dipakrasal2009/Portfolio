@@ -1,25 +1,60 @@
+#version: 0.2
+
+  #phases:
+  #install:
+    #commands:
+      #- echo Installing Node.js and Angular CLI
+        # - curl -sL https://rpm.nodesource.com/setup_16.x | bash -
+        #- yum install -y nodejs
+        # - npm install -g @angular/cli
+        # - echo Installing project dependencies
+        # - npm install
+
+        #build:
+    #commands:
+      #- echo Build started on `date`
+        # - echo Building the Angular app...
+        # - ng build --prod --output-path=dist
+        #  - echo Build completed on `date`
+
+        #artifacts:
+  #files:
+    #- dist/**/*
+
+      #cache:
+  #paths:
+    #    - node_modules/**/*
+
+
+
+
 version: 0.2
 
 phases:
   install:
     commands:
-      - echo Installing Node.js and Angular CLI
-      - curl -sL https://rpm.nodesource.com/setup_16.x | bash -
-      - yum install -y nodejs
+      - echo Installing Dependencies
       - npm install -g @angular/cli
-      - echo Installing project dependencies
       - npm install
+
+  pre_build:
+    commands:
+      - echo Starting Pre-Build Phase
+      - ng build --prod
 
   build:
     commands:
-      - echo Build started on `date`
-      - echo Building the Angular app...
-      - ng build --prod --output-path=dist
-      - echo Build completed on `date`
+      - echo Building the Angular App
+      - ng build --prod
+
+  post_build:
+    commands:
+      - echo Post-Build Phase Completed
 
 artifacts:
   files:
-    - dist/**/*
+    - '**/*'
+  base-directory: dist/<Portfolio>  # Replace with your Angular application directory
 
 cache:
   paths:
