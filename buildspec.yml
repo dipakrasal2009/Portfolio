@@ -34,12 +34,14 @@ phases:
   install:
     commands:
       - echo Installing Dependencies
+      - cd <client>
       - npm install -g @angular/cli
       - npm install
 
   pre_build:
     commands:
       - echo Starting Pre-Build Phase
+      - cd <client>   # Navigate to the directory with Angular app
       - ng build --prod
 
   build:
@@ -54,7 +56,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: dist/<Portfolio>  # Replace with your Angular application directory
+  base-directory: dist/<client>  # Replace with your Angular application directory
 
 cache:
   paths:
