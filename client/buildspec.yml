@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Node.js and Angular CLI
+      - curl -sL https://rpm.nodesource.com/setup_16.x | bash -
+      - yum install -y nodejs
+      - npm install -g @angular/cli
+      - echo Installing project dependencies
+      - npm install
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Angular app...
+      - ng build --prod --output-path=dist
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - dist/**/*
+
+cache:
+  paths:
+    - node_modules/**/*
+
+

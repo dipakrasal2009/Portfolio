@@ -1,0 +1,86 @@
+/* General container styling */
+
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid #00f70c;
+    border-radius: 8px;
+    background-color: #18253b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .container h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #35ff1f;
+    margin-bottom: 20px;
+  }
+  
+  /* Input box styling */
+  .container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .container input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button styling */
+  .container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* API Response styling */
+  .container .api-response {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .container .api-response h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #02e911;
+    margin-bottom: 10px;
+  }
+  
+  .container .api-response pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #1004ff;
+    white-space: pre-wrap; /* Ensures long text wraps within the container */
+    word-wrap: break-word;
+  }
+
+  pre{
+    color: #007bff;
+  }
+
+  h3{
+    color: #00f70c;
+  }

@@ -1,0 +1,193 @@
+.header {
+    /* background-color: #161b22; */
+    background-color: #18253b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-left: 8rem;
+    
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    grid-: repeat(2, 0fr);
+  }
+  
+  .nav-links a {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #29fd0d;
+  }
+
+
+.about-container {
+    background-color: #0d1117;
+    color: #8b949e;
+    padding: 0rem;
+    text-align: left;
+  }
+  
+  .about-container h2 {
+    /* font-size: 2rem; */
+    font-size: 24px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #8b949e;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 12rem;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-pic {
+    margin-right: 2rem;
+    margin-left: 9rem;
+  }
+  
+  .profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #0dfd25;
+  }
+  
+  .about-details {
+    max-width: 60%;
+  }
+  
+  .about-details p {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .about-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-details ul li {
+    margin-bottom: 0.5rem;
+    color: #8b949e;
+  }
+  
+  .about-details ul li strong {
+    color: #13f00c;
+  }
+  .about-details ul li b {
+    color: #ffffff;
+  }
+  
+  .interests-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 1rem;
+    margin-left: 9rem;
+  }
+  
+  .interest {
+    background-color: #122034;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    width: 210px;
+    height: 80px;
+
+    
+  }
+  
+  .interest:hover {
+    background-color: #0d6efd;
+  }
+  
+  .interest i {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    color: #ffffff;
+  }
+  
+  .interest h3 {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #1c7d32;
+  }
+  
+  .about-me .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-me .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .about-me .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #1c7d32;
+  }
+  
+  .about-me .content p:last-child {
+    margin-bottom: 0;
+  }
+   */

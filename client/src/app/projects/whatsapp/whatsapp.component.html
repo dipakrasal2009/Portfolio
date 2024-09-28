@@ -1,0 +1,15 @@
+<div class="whatsapp-container">
+    <h2>Send WhatsApp Message</h2>
+    <form (ngSubmit)="sendMessage()">
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" [(ngModel)]="mobileNumber" name="mobileNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="send-button" (click)="sendMessage()">Send</button>
+      <!-- <h2>{{apiresponce}}</h2> -->
+    </form>
+  </div>
